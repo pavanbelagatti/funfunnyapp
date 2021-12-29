@@ -1,0 +1,15 @@
+---
+kind: pipeline
+type: docker
+name: funfunnyapp
+steps:
+- name: docker
+ image: plugins/docker
+ settings:
+   repo:<dockerhub_pavansa>/funfunnyapp
+   username:
+     from_secret: docker_username
+   password:
+     from_secret: docker_password
+   tags:
+     - latest
