@@ -6,7 +6,7 @@ steps:
 - name: docker
  image: plugins/docker
  settings:
-   repo:<dockerhub_pavansa>/funfunnyapp
+   repo:pavansa/funfunnyapp
    username:
      from_secret: docker_username
    password:
